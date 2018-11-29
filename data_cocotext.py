@@ -21,7 +21,7 @@ class GTUtility(BaseGTUtility):
         
         self.data_path = data_path
         gt_path = data_path
-        image_path = os.path.join(data_path, 'coco-train-val2017/train2014')
+        image_path = os.path.join(data_path, 'coco-train-val2017/train2014/train2014')
         self.gt_path = gt_path
         self.image_path = image_path
         self.classes = ['Background', 'Text']
