@@ -30,7 +30,7 @@ class GTUtility(BaseGTUtility):
         self.data = []
         self.text = []
         
-        with open(os.path.join(gt_path, 'COCO_Text.json')) as f:
+        with open(os.path.join(gt_path, 'cocotext.v2.json')) as f:
             gt_data = json.load(f)
 
         for img_id in gt_data['imgToAnns'].keys(): # images
