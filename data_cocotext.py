@@ -21,7 +21,7 @@ class GTUtility(BaseGTUtility):
         
         self.data_path = data_path
         gt_path = data_path
-        image_path = os.path.join(data_path, 'train2014')
+        image_path = os.path.join(data_path, 'coco-train-val2017/train2014')
         self.gt_path = gt_path
         self.image_path = image_path
         self.classes = ['Background', 'Text']
@@ -30,7 +30,7 @@ class GTUtility(BaseGTUtility):
         self.data = []
         self.text = []
         
-        with open(os.path.join(gt_path, 'cocotext.v2.json')) as f:
+        with open(os.path.join(gt_path, 'cocotext/cocotext.v2.json')) as f:
             gt_data = json.load(f)
 
         for img_id in gt_data['imgToAnns'].keys(): # images
