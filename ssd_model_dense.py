@@ -5,7 +5,7 @@ from keras.layers import MaxPooling2D
 from keras.layers import BatchNormalization
 from keras.layers import concatenate
 
-from utils.layers import leaky_relu
+from layers import leaky_relu
 
 
 def bn_acti_conv(x, filters, kernel_size=1, stride=1, padding='same', activation='relu'):
