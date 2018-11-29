@@ -12,7 +12,7 @@ from keras.layers import Reshape
 from keras.layers import ZeroPadding2D
 from keras.models import Model
 
-from utils.layers import Normalize
+from layers import Normalize
 from ssd_model import ssd512_body
 from ssd_model_dense import dsod512_body
 
